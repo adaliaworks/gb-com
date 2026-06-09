@@ -1,0 +1,57 @@
+/* Grandiloquent Bloviator - static archive stylesheet */
+*{box-sizing:border-box}
+body{margin:0;background:#808080;color:#000;
+     font:15px/1.55 Helvetica,"Helvetica Neue",sans-serif}
+a{text-decoration:none}
+.box{max-width:1000px;margin:0 auto;background:#fff;min-height:100vh}
+.head{background:#808080;margin:22px 22px 0;padding:30px 30px 26px}
+.head h1{margin:0;font-size:46px;font-weight:bold;line-height:1.04}
+.head h1 a{color:#000}
+.head .desc{margin-top:16px;font-size:20px;color:#000}
+.cols{display:flex;flex-wrap:wrap;gap:38px;padding:32px 30px 50px}
+.main{flex:1 1 420px;min-width:0}
+.side{flex:0 0 240px}
+/* posts */
+.post{margin-bottom:42px}
+.post .t,.post h2{font-size:30px;font-weight:bold;color:#000;margin:0 0 6px;line-height:1.12}
+.post h2 a{color:#000}
+.date{color:#999;font-size:12px;margin-bottom:16px}
+.body{font-size:15px;color:#000}
+.body a{color:#888}            /* inline links gray, matching the original look */
+.body a:hover{color:#555}
+.body img{max-width:100%;height:auto}
+.body blockquote{border-left:3px solid #eee;margin:0 0 1em .5em;padding-left:1em;color:#333}
+.labels{margin-top:18px;color:#999;font-size:12px}
+.labels a{color:#999}
+/* Newer / Home / Older nav */
+.nav{display:flex;align-items:center;border-top:1px dotted #bbb;
+     margin-top:38px;padding-top:14px;font-size:14px}
+.nav span{flex:1}
+.nav .home{text-align:center}
+.nav .older{text-align:right}
+.nav a{color:#666}.nav a:hover{color:#000}
+.nav .muted{color:#ccc}
+/* index list */
+.lead{color:#666;font-size:13px;margin:0 0 14px}
+.idx{list-style:none;padding:0;margin:0}
+.idx li{padding:9px 0;border-bottom:1px solid #eee}
+.idx a{color:#000;font-size:18px;font-weight:bold}
+.idx .d{color:#999;font-size:12px;margin-left:10px;font-weight:normal}
+/* sidebar */
+.side h3{font-size:14px;margin:0 0 8px;color:#000;font-weight:bold}
+.side .bio{font-size:14px;color:#000;margin-bottom:28px}
+.side .bio a{color:#888}
+.arch summary{cursor:pointer;list-style:none;padding:4px 0;color:#000;font-size:14px}
+.arch summary::-webkit-details-marker{display:none}
+.arch summary::before{content:"\25B6";color:#888;font-size:10px;margin-right:8px;
+     display:inline-block;transition:transform .12s}
+.arch details[open]>summary::before{transform:rotate(90deg)}
+.arch .mo{margin-left:18px}
+.arch ul{list-style:none;margin:2px 0 6px;padding-left:36px}
+.arch ul li{padding:3px 0}
+.arch ul a{color:#888;font-size:13px}
+.arch ul a:hover{color:#555}
+.arch .c{color:#999}
+.side .archlink a{color:#888;font-size:14px}
+.foot{text-align:center;color:#999;font-size:12px;padding:18px;border-top:1px solid #eee}
+@media(max-width:760px){.side{flex-basis:100%}.head h1{font-size:34px}}
